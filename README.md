@@ -1,6 +1,6 @@
 # Warbler Theory
 
-My personal stenography dictionaries for use with Plover CAT software. Based off of Lapwing Theory and fully backward-compatible with Lapwing rules with a few additional rules for briefs sprinkled on top of it. Adds a large amount of British pronunciations and certain spelling variants not included in `lapwing-uk-additions`.
+My personal stenography dictionaries for use with Plover CAT software. Based off of Lapwing Theory and fully backward-compatible with Lapwing rules with a few additional rules for briefs sprinkled on top of it. Adds a large amount of British pronunciations and certain spelling variants not included in `lapwing-uk-additions`. Intended for use on top of Lapwing's dictionaries.
 
 ## Additions
 
@@ -9,3 +9,4 @@ My personal stenography dictionaries for use with Plover CAT software. Based off
 - Exhaustive theory list on [this google sheet](https://docs.google.com/spreadsheets/d/1LRWNBRDMR3QjvXdCRchEX0O2ihFaTEqm0PTW5yLfKL4/edit?usp=sharing)
   - Green for added theory rules indicates that most common words (according to the COCA dataset) have been added
   - Additional theory rules without green highlight indicate that the incorporation of those rules are not complete, or are planned
+  - Italics indicate outlines not found in Lapwing's default dictionaries, non-italicised outlines are present in Lapwing's default dictionaries
