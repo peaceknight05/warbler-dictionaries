@@ -1,0 +1,5 @@
+{
+"#RA*U": "{PLOVER:SOLO_DICT:+raw.py}",
+"RA*U": "{PLOVER:SOLO_DICT:+raw.json}",
+"*FS": "{PLOVER:SOLO_DICT:+warbler-fingerspelling.py}"
+}
