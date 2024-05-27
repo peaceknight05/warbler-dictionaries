@@ -5,39 +5,41 @@ LONGEST_KEY = 1
 L_STROKES = [
 	"#STKPWHR",
 
-	"#TKPWHR", "STKPWHR",
+	"#TKPWHR",
 
 	"#STKPH", "TKPWHR",
 
-	"#SKWR", "STKPW", "STKPH", "SKPHR", "TKPHR", "KPWHR",
+	"#STKH", "#STPH", "#TPHR", "STKPW", "STPHR", "SKPHR", "TKPHR", "TKWHR",
+	"KPWHR",
 
-	"#STP", "#TPH", "#THR", "#KWR", "#KHR", "STPH", "SKWR", "TKPW", "TKHR", "KPHR",
+	"#TPH", "#THR", "#KWR", "#KHR", "SKWR", "TKPW", "TKHR", "KPWR", "KPHR",
 
-	"#SK", "#TP", "#TR", "#TH", "#KP", "#KW", "#PH", "#HR", "STK", "STP", "TPH",
+	"#TP", "#TR", "#TH", "#KW", "#KR", "#PH", "STK", "STP", "SPH", "TPH",
 	"KWR", "PHR",
 
-	"#T", "#K", "#W", "SR", "TK", "TP", "KP", "KR", "KW", "KH", "PW", "PH", "HR",
+	"#S", "#T", "#K", "#W", "SR", "TK", "TP", "KP", "KR", "KW", "KH", "PW", "PH", "HR",
 
-	"S", "T", "K", "P", "W", "H", "R"
+	"#", "S", "T", "K", "P", "W", "H", "R"
 ]
 
 L_TRANS = [
-	"ni",
+	"anis",
 
-	"gl", "ne",
+	"gl",
 
 	"ankyl", "ny",
 
-	"e", "z", "acanth", "macr", "dipl", "pyl",
+	"acanth", "an", "rhyn", "z", "cephal", "macr", "dipl", "phyt",
+	"pyl",
 
-	"phyt", "a", "erythr", "i", "an", "leuc", "j", "g", "lact", "micr",
+	"ne", "erythr", "i", "leuc", "j", "g", "lact", "phy", "micr",
 
-	"ac", "phy", "tyr", "mni", "ex", "q", "ph", "rhyn", "pseud", "cephal", "n",
+	"eff", "tyr", "mni", "q", "acr", "ph", "pseud", "phys", "ni", "n",
 	"y", "pl",
 
-	"tri", "cocc", "u", "v", "d", "f", "x", "c", "qu", "ch", "b", "m", "l",
+	"a", "tri", "cocc", "u", "v", "d", "f", "x", "c", "qu", "ch", "b", "m", "l",
 
-	"s", "t", "k", "p", "w", "h", "r"
+	"e", "s", "t", "k", "p", "w", "h", "r"
 ]
 
 V_STROKES = [
@@ -55,21 +57,22 @@ V_TRANS = [
 ]
 
 R_STROKES = [
-	"*FPLTD", "FPLTGS",
+	"*FPLTD", "FPLGTS",
 
-	"*FRPB", "*FRPL", "*FRGS", "*FRDZ", "*PBLG", "*PBGS", "*BLDZ", "FLGTD",
+	"*FRPB", "*FRPL", "*FRGS", "*FRDZ", "*FBGS", "*FBDZ", "*PBLG", "*PBGS", "*BLDZ",
+	"*BGTD", "FLGTD",
 
 	"*FRP", "*FPL", "*FPZ", "*FBL", "*FSZ", "*RPB", "*PBG", "*PLD", "*PLZ", "*BGT",
 	"*BGS", "*BGZ", "*LGT", "*LGD", "FRPB", "FRPL", "FBGS", "FLGD", "PBLG", "PBGT",
 	"LGTD",
 
-	"*FP", "*FZ", "*RP", "*PB", "*PL", "*BL", "*BG", "*BS", "*BZ", "*LS", "*GT",
-	"*GZ", "*TS", "*DZ", "FRP", "FPB", "FPD", "FLT", "FGS", "FSZ", "PBG", "PBZ",
-	"PLT", "BGS", "BGZ", "LGT", "LGD", "GSZ",
+	"*FP", "*FB", "*FZ", "*RP", "*PB", "*PL", "*BL", "*BG", "*BS", "*BZ", "*LS",
+	"*GT", "*GZ", "*TS", "*DZ", "FRP", "FPB", "FPD", "FLT", "FGS", "FSZ", "PBG",
+	"PBZ", "PLT", "BGS", "BGZ", "LGT", "LGD", "GTD", "GSD", "GSZ",
 
 	"*F", "*R", "*L", "*G", "*T", "*S", "*D", "*Z", "FR", "FP", "FB", "FT", "FS",
 	"FD", "FZ", "RB", "PB", "PL", "BL", "BG", "BZ", "LG", "LS", "LD", "LZ", "GT",
-	"GS", "GZ", "TD", "SZ", "DZ",
+	"GS", "GD", "GZ", "TD", "SZ", "DZ",
 
 	"F", "R", "P", "B", "L", "G", "T", "S", "D", "Z"
 ]
@@ -77,19 +80,20 @@ R_STROKES = [
 R_TRANS = [
 	"phthalmidae", "phthalmus",
 
-	"nch", "mim", "virus", "vri", "j", "nnus", "bacilli", "stes",
+	"nch", "mim", "virus", "vri", "coccus", "cocci", "j", "nnus", "bacilli",
+	"cum", "stes",
 
 	"mp", "forme", "ceps", "phyll", "ssis", "rrhen", "nc", "pillo", "pillus", "canth",
 	"ces", "cys", "lta", "les", "min", "mum", "phus", "ses", "myc", "na",
 	"tes",
 
-	"forma", "phis", "re", "nae", "pyl", "bacill", "c", "x", "ceae", "lis", "ta",
-	"gis", "tus", "des", "pter", "chry", "chy", "phthal", "sus", "ssis", "ng", "nis",
-	"ment", "cus", "cis", "la", "es", "zus",
+	"forma", "cocc", "phis", "re", "nae", "pyl", "bacill", "c", "x", "ceae", "lis",
+	"ta", "gis", "tus", "des", "pter", "chry", "chy", "phthal", "sus", "ssis", "ng",
+	"nis", "ment", "cus", "cis", "la", "es", "ea", "dus", "zus",
 
 	"v", "rr", "ll", "gea", "th", "cea", "dae", "zoa", "saur", "ch", "phy", "st", "sis",
 	"sa", "phys", "sh", "n", "m", "bil", "k", "bis", "lch", "lys", "ia", "yx", "a",
-	"us", "o", "um", "sys", "ii",
+	"us", "ius", "o", "um", "sys", "ii",
 
 	"f", "r", "p", "b", "l", "g", "t", "s", "d", "z"
 ]
@@ -118,15 +122,15 @@ def lookup(outline):
 			if chord in left:
 				larr.append((left.index(chord), L_TRANS[i]))
 				left = left.replace(chord, "-"*len(chord))
-	out += "".join([i[1] for i in sorted(larr)])
+	out += "".join(["{&%s}"%i[1] for i in sorted(larr)])
 	if vowels:
-		out += V_TRANS[V_STROKES.index(vowels)]
+		out += "{&%s}"%V_TRANS[V_STROKES.index(vowels)]
 	rarr = []
 	if right:
 		for i, chord in enumerate(R_STROKES):
 			if chord in right:
 				rarr.append((right.index(chord), R_TRANS[i]))
 				right = right.replace(chord, "-"*len(chord))
-	out += "".join([i[1] for i in sorted(rarr)])
+	out += "".join(["{&%s}"%i[1] for i in sorted(rarr)])
 
-	return "{&" + out + "}"
+	return out
