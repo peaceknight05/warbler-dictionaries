@@ -9,9 +9,9 @@ L_STROKES = [
 
 	"#STKPH", "TKPWHR",
 
-	"#SKWR", "STKPW", "STKPH", "SKPHR", "KPWHR",
+	"#SKWR", "STKPW", "STKPH", "SKPHR", "TKPHR", "KPWHR",
 
-	"#STP", "#TPH", "#THR", "#KWR", "#KHR", "STPH", "SKWR", "TKPW", "KPHR",
+	"#STP", "#TPH", "#THR", "#KWR", "#KHR", "STPH", "SKWR", "TKPW", "TKHR", "KPHR",
 
 	"#SK", "#TP", "#TR", "#TH", "#KP", "#KW", "#PH", "#HR", "STK", "STP", "TPH",
 	"KWR", "PHR",
@@ -28,9 +28,9 @@ L_TRANS = [
 
 	"ankyl", "ny",
 
-	"e", "z", "acanth", "macr", "pyl",
+	"e", "z", "acanth", "macr", "dipl", "pyl",
 
-	"phyt", "a", "erythr", "i", "an", "leuc", "j", "g", "micr",
+	"phyt", "a", "erythr", "i", "an", "leuc", "j", "g", "lact", "micr",
 
 	"ac", "phy", "tyr", "mni", "ex", "q", "ph", "rhyn", "pseud", "cephal", "n",
 	"y", "pl",
@@ -55,17 +55,17 @@ V_TRANS = [
 ]
 
 R_STROKES = [
-	"FPLTGS",
+	"*FPLTD", "FPLTGS",
 
-	"*FRPB", "*FRPL", "*FRGS", "*FRDZ", "*PBLG", "*PBGS", "FLGTD",
+	"*FRPB", "*FRPL", "*FRGS", "*FRDZ", "*PBLG", "*PBGS", "*BLDZ", "FLGTD",
 
 	"*FRP", "*FPL", "*FPZ", "*FBL", "*FSZ", "*RPB", "*PBG", "*PLD", "*PLZ", "*BGT",
 	"*BGS", "*BGZ", "*LGT", "*LGD", "FRPB", "FRPL", "FBGS", "FLGD", "PBLG", "PBGT",
 	"LGTD",
 
-	"*FP", "*FZ", "*RP", "*PB", "*PL", "*BG", "*BS", "*BZ", "*LS", "*GT", "*GZ",
-	"*TS", "*DZ", "FRP", "FPB", "FPD", "FLT", "FGS", "FSZ", "PBG", "PBZ", "PLT",
-	"BGS", "BGZ", "LGT", "LGD", "GSZ",
+	"*FP", "*FZ", "*RP", "*PB", "*PL", "*BL", "*BG", "*BS", "*BZ", "*LS", "*GT",
+	"*GZ", "*TS", "*DZ", "FRP", "FPB", "FPD", "FLT", "FGS", "FSZ", "PBG", "PBZ",
+	"PLT", "BGS", "BGZ", "LGT", "LGD", "GSZ",
 
 	"*F", "*R", "*L", "*G", "*T", "*S", "*D", "*Z", "FR", "FP", "FB", "FT", "FS",
 	"FD", "FZ", "RB", "PB", "PL", "BL", "BG", "BZ", "LG", "LS", "LD", "LZ", "GT",
@@ -75,17 +75,17 @@ R_STROKES = [
 ]
 
 R_TRANS = [
-	"phthalmus",
+	"phthalmidae", "phthalmus",
 
-	"nch", "mim", "virus", "vri", "j", "nnus", "stes",
+	"nch", "mim", "virus", "vri", "j", "nnus", "bacilli", "stes",
 
 	"mp", "forme", "ceps", "phyll", "ssis", "rrhen", "nc", "pillo", "pillus", "canth",
 	"ces", "cys", "lta", "les", "min", "mum", "phus", "ses", "myc", "na",
 	"tes",
 
-	"forma", "phis", "re", "nae", "pyl", "c", "x", "ceae", "lis", "ta", "gis",
-	"tus", "des", "pter", "chry", "chy", "phthal", "sus", "ssis", "ng", "nis", "ment",
-	"cus", "cis", "la", "es", "zus",
+	"forma", "phis", "re", "nae", "pyl", "bacill", "c", "x", "ceae", "lis", "ta",
+	"gis", "tus", "des", "pter", "chry", "chy", "phthal", "sus", "ssis", "ng", "nis",
+	"ment", "cus", "cis", "la", "es", "zus",
 
 	"v", "rr", "ll", "gea", "th", "cea", "dae", "zoa", "saur", "ch", "phy", "st", "sis",
 	"sa", "phys", "sh", "n", "m", "bil", "k", "bis", "lch", "lys", "ia", "yx", "a",
