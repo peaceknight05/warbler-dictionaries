@@ -12,11 +12,11 @@ L_STROKES = [
 	"#STKH", "#STPH", "STKPW", "STPHR", "SKPHR", "TKPHR", "TKWHR",
 	"KPWHR",
 
-	"#TPH", "#THR", "#KWR", "#KHR", "SKWR", "SPWR", "TKPW", "TKHR", "TPHR", "KPWR",
+	"#TPH", "#THR", "#KHR", "SKWR", "SPWR", "TKPW", "TKHR", "TPHR", "KPWH", "KPWR",
 	"KPHR",
 
 	"#TP", "#TR", "#TH", "#KW", "#KR", "#PH", "STK", "STP", "SPW", "SPH", "TPW",
-	"TPH", "THR", "KWR", "PHR",
+	"TPH", "THR", "KWH", "KWR", "PHR",
 
 	"#S", "#T", "#K", "#W", "SR", "TK", "TP", "KP", "KR", "KW", "KH", "PW", "PH", "HR",
 
@@ -33,11 +33,11 @@ L_TRANS = [
 	"acanth", "an", "z", "cephal", "macr", "dipl", "phyt",
 	"pyl",
 
-	"ne", "erythr", "i", "leuc", "j", "enter", "g", "lact", "rhynch", "phy",
+	"ne", "erythr", "leuc", "j", "enter", "g", "lact", "rhynch", "phy", "phi",
 	"micr",
 
 	"eff", "tyr", "mni", "q", "acr", "ph", "pseud", "phys", "ent", "ni", "bat",
-	"n", "rhyn", "y", "pl",
+	"n", "rhyn", "y", "i", "pl",
 
 	"a", "tri", "cocc", "u", "v", "d", "f", "x", "c", "qu", "ch", "b", "m", "l",
 
@@ -66,18 +66,17 @@ R_STROKES = [
 	"*FRPB", "*FRPL", "*FRGS", "*FRDZ", "*FPBZ", "*FBGS", "*FBDZ", "*FLSZ", "*PBLG",
 	"*PBGS", "*BLDZ", "*BGTD", "*BGSZ", "*LGTD", "*LGSZ", "FLGTD", "PBGSZ", "BLGSZ",
 
-	"*FRP", "*FPB", "*FPL", "*FPZ", "*FBL", "*RPB", "*PBG", "*PLD", "*PLZ", "*BGT",
+	"*FRP", "*FPB", "*FPL", "*FBL", "*RPB", "*PBG", "*PLD", "*PLZ", "*BGT",
 	"*BGS", "*BGZ", "*BTD", "*LGT", "*LGD", "*LSZ", "*GTD", "*GSZ", "FRPB", "FRPL",
 	"FBGS", "FLGD", "FLSZ", "PBLG", "PBGT", "PBGS", "BGSZ", "LGTD",
 
 	"*FP", "*FB", "*FZ", "*RP", "*PB", "*PL", "*BL", "*BG", "*BS", "*BZ",
-	"*GT", "*TS", "*TD", "*DZ", "FRP", "FPB", "FPD", "FLT", "FGS", "FSZ", "PBG",
-	"PLT", "BGS", "LGT", "LGD", "LTS", "LSZ", "GTD", "GSZ",
+	"*GT", "*TS", "*TD", "*DZ", "FRP", "FPB", "FPD", "FPZ", "FLT", "FGS", "FSZ",
+	"PBG", "PLT", "BGS", "LGT", "LGD", "LTS", "LSZ", "GTD", "GSZ",
 
 	"*F", "*R", "*L", "*G", "*T", "*S", "*D", "*Z", "FR", "FP", "FB", "FT",
 	"FD", "FZ", "RB", "PB", "PL", "BL", "BG", "BS", "BZ", "LG", "LS", "LD", "LZ",
-	"GT",
-	"GS", "GD", "GZ", "TD", "SZ", "DZ",
+	"GT", "GS", "GD", "GZ", "TD", "SZ", "DZ",
 
 	"F", "R", "P", "B", "L", "G", "T", "S", "D", "Z"
 ]
@@ -90,18 +89,17 @@ R_TRANS = [
 	"nch", "mim", "virus", "vri", "bacteraceae", "coccus", "cocci", "phis", "j",
 	"nnus", "bacilli", "cum", "cae", "dus", "gis", "stes", "nae", "cis",
 
-	"mp", "bacter", "forme", "ceps", "phyll", "rrhen", "nc", "pillo", "pillus", "canth",
+	"mp", "bacter", "forme", "phyll", "rrhen", "nc", "pillo", "pillus", "canth",
 	"ces", "cys", "batidae", "lta", "les", "lis", "dea", "zus", "min", "mum",
 	"phus", "ses", "sis", "myc", "na", "nus", "bae", "tes",
 
 	"forma", "cocc", "phis", "re", "nae", "pyl", "bacill", "c", "bs", "ceae",
-	"ta", "tus", "tidae", "des", "pter", "chry", "chy", "phthal", "sus", "ssis", "ng",
-	"ment", "cus", "la", "es", "tis", "is", "ea", "ae",
+	"ta", "tus", "tidae", "des", "pter", "chry", "chy", "ceps", "phthal", "sus", "ssis",
+	"ng", "ment", "cus", "la", "es", "tis", "is", "ea", "ae",
 
 	"v", "rr", "ll", "gea", "th", "cea", "dae", "zoa", "saur", "ch", "phy", "st",
 	"sa", "phys", "sh", "n", "m", "bil", "k", "x", "bys", "lch", "lys", "ia", "yx",
-	"a",
-	"us", "ius", "o", "um", "sys", "ii",
+	"a", "us", "ius", "o", "um", "sys", "ii",
 
 	"f", "r", "p", "b", "l", "g", "t", "s", "d", "z"
 ]
