@@ -24,7 +24,7 @@ def hasOverlap(stroke, insert):
 	stroke = convertToIndices(stroke)
 	insert = convertToIndices(insert, force_right=True)
 	for key in insert:
-		if any([key <= i for i in stroke]):
+		if any([key <= i for i in stroke if key != 10]):
 			return True
 	return False
 
@@ -59,12 +59,18 @@ left_to_right = {
 		"PW": "B",
 		"HR": "L",
 		"S*": "Z",
+		"SH": "RB",
+		"ST": "FT",
+		"KH": "FP",
 		"SR": "F",
 		"SKWR": "PBLG",
+		"TH": "*T",
+		"K": "BG",
+		"TR": "RT",
 		"KWR": ""
 	}
 
-for outline, translation in s:
+for outline, translation in s: # illegal steno
 	if outline in warbler:
 		continue
 	if re.search("/[^/]*EUS/TEUBG(/.*)?", outline) is not None:
@@ -76,7 +82,20 @@ for outline, translation in s:
 		if front == "KW" or hasOverlap(preceding, right):
 			print("(x)", outline, translation)
 			continue
-		suggestion = outline.replace(f"/{front}EUS/TEUBG", f"{right}/ST-BG")
+		if "*" in right:
+			right = right.replace("*", "")
+			if "*" in preceding:
+				suggestion = outline.replace(f"/{front}EUS/TEUBG", f"{right}/ST-BG")
+			else:
+				precedingIndices = convertToIndices(preceding)
+				asteriskIndex = [i for i, j in enumerate(precedingIndices) if j < 10][-1]
+				precedingModified = preceding[:asteriskIndex] + "*" + preceding[asteriskIndex:]
+				suggestion = outline.replace(f"{preceding}/{front}EUS/TEUBG", f"{precedingModified}{right}/ST-BG")
+		else:
+			suggestion = outline.replace(f"/{front}EUS/TEUBG", f"{right}/ST-BG")
+		if suggestion in warbler:
+			print("*", outline, translation, suggestion)
+			continue
 		print(outline, translation, suggestion)
 		suggestions[suggestion] = translation
 
