@@ -61,7 +61,7 @@ V_TRANS = [
 R_STROKES = [
 	"*FPBLDZ",
 
-	"*FPBTD", "*FPLTD", "FPLGTS",
+	"*FPBTD", "*FPLTD", "*FBGSZ", "FPLGTS",
 
 	"*FRPB", "*FRPL", "*FRGS", "*FRDZ", "*FPBZ", "*FBGS", "*FBDZ", "*FLSZ", "*PBLG",
 	"*PBGS", "*BLDZ", "*BGTD", "*BGSZ", "*LGTD", "*LGSZ", "FLGTD", "PBGSZ", "BLGSZ",
@@ -84,7 +84,7 @@ R_STROKES = [
 R_TRANS = [
 	"bacteriaceae",
 
-	"bacterium", "phthalmidae", "phthalmus",
+	"bacterium", "phthalmidae", "coccaceae", "phthalmus",
 
 	"nch", "mim", "virus", "vri", "bacteraceae", "coccus", "cocci", "phis", "j",
 	"nnus", "bacilli", "cum", "cae", "dus", "gis", "stes", "nae", "cis",
