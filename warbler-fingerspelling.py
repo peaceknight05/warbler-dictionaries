@@ -7,15 +7,15 @@ L_STROKES = [
 
 	"#TKPWHR",
 
-	"#STKPH", "#STPHR", "#KPWHR", "TKPWHR",
+	"#STKPH", "#STPHR", "#TKPWH", "#KPWHR", "TKPWHR",
 
-	"#STKH", "#STPH", "STKPW", "STPHR", "SKPHR", "TKPHR", "TKWHR",
-	"KPWHR",
+	"#STKH", "#STPH", "#SKWR", "STKPW", "STPHR", "SKPHR", "TKPHR", "TKPWH",
+	"TKWHR", "KPWHR",
 
-	"#TPH", "#THR", "#KHR", "SKWR", "SPWR", "TKPW", "TKHR", "TPHR", "KPWH", "KPWR",
-	"KPHR",
+	"#TPH", "#THR", "#KHR", "SKWR", "SPWR", "TKPW", "TKHR", "TPHR", "KPWH",
+	"KPWR", "KPHR",
 
-	"#TP", "#TR", "#TH", "#KW", "#KR", "#PH", "STK", "STP", "SPW", "SPH", "TPW",
+	"#TP", "#TR", "#TH", "#KW", "#KR", "#PH", "STK", "STP", "SPW", "TPW",
 	"TPH", "THR", "KWH", "KWR", "PHR",
 
 	"#S", "#T", "#K", "#W", "SR", "TK", "TP", "KP", "KR", "KW", "KH", "PW", "PH", "HR",
@@ -28,15 +28,15 @@ L_TRANS = [
 
 	"gl",
 
-	"ankyl", "arhynch", "myl", "ny",
+	"ankyl", "arhynch", "gh", "myl", "ni",
 
-	"acanth", "an", "z", "cephal", "macr", "dipl", "phyt",
-	"pyl",
+	"acanth", "an", "vir", "z", "cephal", "macr", "dipl", "ny",
+	"phyt", "pyl",
 
-	"ne", "erythr", "leuc", "j", "enter", "g", "lact", "rhynch", "phy", "phi",
-	"micr",
+	"myc", "erythr", "leuc", "j", "enter", "g", "lact", "rhynch", "phy",
+	"phi", "micr",
 
-	"eff", "tyr", "mni", "q", "acr", "ph", "pseud", "phys", "ent", "ni", "bat",
+	"eff", "tyr", "mni", "q", "acr", "ph", "pseud", "phys", "ent", "bat",
 	"n", "rhyn", "y", "i", "pl",
 
 	"a", "tri", "cocc", "u", "v", "d", "f", "x", "c", "qu", "ch", "b", "m", "l",
@@ -61,18 +61,21 @@ V_TRANS = [
 R_STROKES = [
 	"*FPBLDZ",
 
-	"*FPBTD", "*FPLTD", "*FBGSZ", "FPLGTS",
+	"*FPBTD", "*FPLTD", "*FBGSZ", "*PBGSZ", "FPLGTS",
 
 	"*FRPB", "*FRPL", "*FRGS", "*FRDZ", "*FPBZ", "*FBGS", "*FBDZ", "*FLSZ", "*PBLG",
-	"*PBGS", "*BLDZ", "*BGTD", "*BGSZ", "*LGTD", "*LGSZ", "FLGTD", "PBGSZ", "BLGSZ",
+	"*PBGS", "*BLDZ", "*BGTD", "*BGSZ", "*LGTD", "*LGSZ", "*LGDZ", "FLGTD", "PBLGZ",
+	"PBGSZ", "BLGSZ",
 
 	"*FRP", "*FPB", "*FPL", "*FBL", "*RPB", "*PBG", "*PLD", "*PLZ", "*BGT",
-	"*BGS", "*BGZ", "*BTD", "*LGT", "*LGD", "*LSZ", "*GTD", "*GSZ", "FRPB", "FRPL",
-	"FBGS", "FLGD", "FLSZ", "PBLG", "PBGT", "PBGS", "BGSZ", "LGTD",
+	"*BGS", "*BGD", "*BGZ", "*BTD", "*LGT", "*LGD", "*LSZ", "*GTD", "*GSZ",
+	"FRPB", "FRPL", "FBGS", "FLGD", "FLSZ", "PBLG", "PBGT", "PBGS", "BGSZ",
+	"LGTD", "LGDZ",
 
-	"*FP", "*FB", "*FZ", "*RP", "*PB", "*PL", "*BL", "*BG", "*BS", "*BZ",
-	"*GT", "*TS", "*TD", "*DZ", "FRP", "FPB", "FPD", "FPZ", "FLT", "FGS", "FSZ",
-	"PBG", "PLT", "BGS", "LGT", "LGD", "LTS", "LSZ", "GTD", "GSZ",
+	"*FP", "*FB", "*FZ", "*RP", "*PB", "*PL", "*BL", "*BG", "*BS", "*BZ", "*LT",
+	"*LD", "*GT", "*GD", "*TS", "*TD", "*DZ", "FRP", "FRB", "FPB", "FPD", "FPZ",
+	"FLT", "FGS", "FSZ", "PBG", "PLT", "BGT", "BGS", "BGZ", "LGT", "LGD", "LGZ",
+	"LTS", "LSZ", "LDZ", "GTD", "GSZ", "GDZ",
 
 	"*F", "*R", "*L", "*G", "*T", "*S", "*D", "*Z", "FR", "FP", "FB", "FT",
 	"FD", "FZ", "RB", "PB", "PL", "BL", "BG", "BS", "BZ", "LG", "LS", "LD", "LZ",
@@ -84,18 +87,21 @@ R_STROKES = [
 R_TRANS = [
 	"bacteriaceae",
 
-	"bacterium", "phthalmidae", "coccaceae", "phthalmus",
+	"bacterium", "phthalmidae", "coccaceae", "neae", "phthalmus",
 
 	"nch", "mim", "virus", "vri", "bacteraceae", "coccus", "cocci", "phis", "j",
-	"nnus", "bacilli", "cum", "cae", "dus", "gis", "stes", "nae", "cis",
+	"nnus", "bacilli", "cum", "cae", "dus", "gis", "deae", "stes", "ni",
+	"nae", "cis",
 
 	"mp", "bacter", "forme", "phyll", "rrhen", "nc", "pillo", "pillus", "canth",
-	"ces", "cys", "batidae", "lta", "les", "lis", "dea", "zus", "min", "mum",
-	"phus", "ses", "sis", "myc", "na", "nus", "bae", "tes",
+	"ces", "cidae", "cys", "batidae", "lta", "les", "lis", "dea", "zus",
+	"min", "mum", "phus", "ses", "sis", "myc", "na", "nus", "bae",
+	"tes", "lchii",
 
-	"forma", "cocc", "phis", "re", "nae", "pyl", "bacill", "c", "bs", "ceae",
-	"ta", "tus", "tidae", "des", "pter", "chry", "chy", "ceps", "phthal", "sus", "ssis",
-	"ng", "ment", "cus", "la", "es", "tis", "is", "ea", "ae",
+	"forma", "cocc", "phis", "re", "nae", "pyl", "bacill", "c", "bs", "ceae", "ti",
+	"dd", "ta", "da", "tus", "tidae", "des", "pter", "chry", "mb", "chy", "ceps",
+	"phthal", "sus", "ssis", "ng", "ment", "ba", "cus", "co", "la", "es", "i",
+	"tis", "is", "lii", "ea", "ae", "gii",
 
 	"v", "rr", "ll", "gea", "th", "cea", "dae", "zoa", "saur", "ch", "phy", "st",
 	"sa", "phys", "sh", "n", "m", "bil", "k", "x", "bys", "lch", "lys", "ia", "yx",
