@@ -103,5 +103,6 @@
 "OEUS/TER/KA*FP/*ER": "oystercatcher",
 "*RPLD": "{^-rumped}",
 "*PBGD": "{^-winged}",
-"*TD": "{^-toed}"
+"*TD": "{^-toed}",
+"-PBGD": "{^-winged}"
 }
